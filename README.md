@@ -6,6 +6,7 @@ I am using this project to learn about godot and how to code on it since I have 
 This is a simple flappy bird game part of the [20 Day Game Challange](https://20_games_challenge.gitlab.io/).
 
 Assets used from:
+
 [Pixel frog's: Pixel Adventure 1](https://pixelfrog-assets.itch.io/pixel-adventure-1)
 
 Followed this tutorial:
