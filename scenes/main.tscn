@@ -1,13 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://b448qnygbp1rc"]
+[gd_scene load_steps=6 format=3 uid="uid://b448qnygbp1rc"]
 
 [ext_resource type="Shader" uid="uid://bdmgrb2vjtqjb" path="res://scenes/scroll.gdshader" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://b3ie8o8dtw7x1" path="res://scenes/main.gd" id="1_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://bps28e05ogt0h" path="res://Assets/Background/Brown.png" id="2_sugp2"]
+[ext_resource type="PackedScene" uid="uid://hukax6p3ylds" path="res://scenes/bird.tscn" id="4_tbgi4"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_sugp2"]
 shader = ExtResource("1_0wfyh")
 shader_parameter/speed = 0.5
 
 [node name="Main" type="Node"]
+script = ExtResource("1_jyhfs")
 
 [node name="Background" type="TextureRect" parent="."]
 material = SubResource("ShaderMaterial_sugp2")
@@ -15,3 +18,5 @@ offset_right = 412.0
 offset_bottom = 648.0
 texture = ExtResource("2_sugp2")
 stretch_mode = 1
+
+[node name="Bird" parent="." instance=ExtResource("4_tbgi4")]
